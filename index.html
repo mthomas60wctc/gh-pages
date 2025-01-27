@@ -22,12 +22,13 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <!-- client css -->
     <!-- <link rel="stylesheet" href="client.css" /> -->
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="bi bi-compass"></i> Northwind</a>
+            <a class="navbar-brand" href="#"><i class="hgi-stroke hgi-compass"></i> Northwind</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,37 +38,51 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Products
+                            <i class="hgi-stroke hgi-product-loading"></i> Products
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Browse Categories</a></li>
-                            <li><a class="dropdown-item" href="#">Product Search</a></li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="hgi-stroke hgi-left-to-right-list-triangle"></i> Browse Categories</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="hgi-stroke hgi-search-list-02"></i> Product
+                                    Search</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Current Discounts</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="hgi-stroke hgi-sale-tag-02"></i> Current
+                                    Discounts</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Customers
+                            <i class="hgi-stroke hgi-user-account"></i> Customers
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Sign In</a></li>
-                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="hgi-stroke hgi-login-03"></i> Sign In</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="hgi-stroke hgi-license-draft"></i>
+                                    Register</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="bi bi-search"></i></button>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i
+                            class="hgi-stroke hgi-search-01"></i></button>
                     <span class="visually-hidden">Search</span></button>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">Hello World!</div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Northwind</h4>
+            <h6 class="card-subtitle mb-2 text-muted">For exceptional international quisuine, look no further.</h6>
+            <p class="card-text">We have the best prices and selection of high quality foods &amp; beverages on the planet! Check out our featured discounts below.</p>
+            <a href="#" class="card-link"><i class="hgi-stroke hgi-border-full"></i> Order Now</a>
+        </div>
+    </div>
 </body>
 
 </html>
