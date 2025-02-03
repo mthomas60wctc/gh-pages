@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             document.getElementById('product').innerHTML = e.target.dataset['product'];
             document.getElementById('code-display').innerHTML = "Discount Code: " + e.target.dataset['code'];
+            document.getElementById('title-display').innerHTML = e.target.dataset['title'];
             bootstrap.Toast.getOrCreateInstance(document.getElementById('liveToast')).show();
         }
     });
