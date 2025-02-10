@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         autohide: true,
         format: 'MM-dd'
     });
+    //add random animation to title
     const attentionSeekers = ["bounce", "flash", "pulse", "rubberBand", "shakeX", "shakeY", "headShake", "swing", "tada", "wobble", "jello", "heartBeat",];
     document.getElementById('page-title').classList.add('animate__' + attentionSeekers[Math.floor(Math.random() * attentionSeekers.length)])
     // uncheck all boxes by default (Firefox)
@@ -29,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById('checkbox-card').addEventListener('mouseover', function(e){
         if (!e.target.classList.contains('form-check-label')) return;
         let color = e.target.getAttribute('for');
-        if (color == 'bluegreen') color = 'cyan';
         document.getElementById('page-title').style.color = color;
     });
     //remove title color
